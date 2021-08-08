@@ -6,12 +6,13 @@
 :root{
     --primary-color: #f47e2c;
     --secondary: #0f2e4c;
+    --third: #fef2ea;
 }
 html{
     font-size: 62.5%;
 }
 body{
-    background-color: #fef2ea;
+    background-color: var(--third);
 }
 header{
     padding: 3rem 1rem 0 1rem;
@@ -60,10 +61,14 @@ header{
     outline: none;
     border: none;
     border-radius: 2rem;
-    color: #efefef;
+    color: var(--third);
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+    transition: all 0.5s ease;
+}
+.presentation .start button:hover{
+    background-color: var(--secondary);
 }
 
 .footer{

@@ -4,13 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check your skills">
+
     <title>Interview</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./interview.css">
+
 </head>
 <body>
-    <section>Teachable Machine Audio Model</section>
-    <button onclick="init()">Start▶</button>
+    <header>
+        <h1>Test your <b>skills</b></h1>
+    </header>
+    <main>
+        <h2>Teachable Machine Audio Model</h2>
+        <button onclick="init()">Start</button>
 
-    <div id="label-container"></div>
+        <div id="label-container"></div>
+    </main>
+    <footer class="footer">
+        <h2 class="title">
+            Robo<b>Hacks</b> from <b>MLH</b>
+        </h2>
+        <h3 class="team">Team:</h3>
+        <ul class="team-list">
+            <li>Reeva</li>
+            <li>Rosanna Mannan</li>
+            <li>Daniel</li>
+        </ul>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
 
@@ -40,7 +67,7 @@
     async function init() {
         const recognizer = await createModel();
         const classLabels = recognizer.wordLabels(); // get class labels
-        const labelContainer = document.getElementById("label-container");
+        const labelContainer = document.querySelector("#label-container");
         for (let i = 0; i < classLabels.length; i++) {
             labelContainer.appendChild(document.createElement("div"));
         }
