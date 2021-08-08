@@ -51,11 +51,9 @@ header{
     width: 40rem;
     font-size: 3rem;
 }
-.presentation .start a{
-    text-decoration: none;
-}
 .presentation .start button{
     margin: 2rem 0 0 0;
+    cursor: pointer;
     width: 100%;
     padding: 1rem 0;
     background-color: var(--primary-color);
@@ -69,6 +67,7 @@ header{
 }
 
 .footer{
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +77,17 @@ header{
 .footer .title {
     font-size: 3rem;
     color: var(--primary-color);
+    padding: 2rem;
 }
 .footer .title b{
+    color: var(--secondary);
+}
+.footer .team {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+.footer .team-list{
+    font-size: 2rem;
     color: var(--secondary);
 }
