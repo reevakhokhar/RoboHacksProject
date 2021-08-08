@@ -1,0 +1,9 @@
+# Virtual Enviroment
+*env/
+
+# Flask stuff:
+*instance/
+*.webassets-cache
+
+# Byte-compiled / optimized / DLL files
+*__pycache__/

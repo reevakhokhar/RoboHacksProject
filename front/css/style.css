@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #f47e2c;
+    --secondary: #0f2e4c;
+    --third: #fef2ea;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--third);
+}
+header{
+    padding: 3rem 1rem 0 1rem;
+}
+.title.w{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #f47e2c;
+    font-size: 4rem;
+}
+.title.w b{
+    color: #0f2e4c;
+    font-weight: 900;
+}
+
+.main{
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main .presentation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.presentation figure{
+    width: 70rem;
+    height: 70rem;
+}
+.presentation figure img {
+    width: 100%;
+    height: 100%;
+}
+.presentation .start {
+    text-align: justify;
+    width: 40rem;
+    font-size: 3rem;
+}
+.presentation .start button{
+    margin: 2rem 0 0 0;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    color: var(--third);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.presentation .start button:hover{
+    background-color: var(--secondary);
+}
+
+.footer{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.footer .title {
+    font-size: 3rem;
+    color: var(--primary-color);
+    padding: 2rem;
+}
+.footer .title b{
+    color: var(--secondary);
+}
+.footer .team {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+.footer .team-list{
+    font-size: 2rem;
+    color: var(--secondary);
+}
